@@ -1,0 +1,13 @@
+sudo apt-get install gnuplot-x11
+
+gnuplot
+
+set xlabel 'no of inputs'
+
+set ylabel 'time'
+
+set title 'time complexity comparison'
+
+plot 'bubble.dat' with linespoint linestyle 1 lt rgb 'red' ,'quick.dat' with linespoint linestyle 1  lt rgb 'green' ,'insertion.dat' with linespoint linestyle 1  lt rgb 'blue' ,'selection.dat' with linespoint linestyle 1 lt rgb 'orange'
+
+
